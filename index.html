@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div id="box">
+            <span>RGB Code Generator</span>
+        </div>
+
+        <div class="allInputs">
+            <div class="inputArea">
+                <label for="red">RED</label>
+                <input type="number" id="red" max="255" min="0">
+            </div>
+            <div class="inputArea">
+                <label for="green">GREEN</label>
+                <input type="number" id="green" max="255" min="0">
+            </div>
+            <div class="inputArea">
+                <label for="blue">BLUE</label>
+                <input type="number" id="blue" max="255" min="0">
+            </div>
+            <div class="inputArea">
+                <label for="opa">OPACITY (%)</label>
+                <input type="number" id="opa" max="100" min="0">
+            </div>
+        </div>
+        <button id="generate">Generet color code</button>
+        <input type="text" id="result" readonly placeholder="Result">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
